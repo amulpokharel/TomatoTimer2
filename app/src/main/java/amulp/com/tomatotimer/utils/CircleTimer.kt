@@ -27,7 +27,7 @@ class CircleTimer: View {
 
     private var mTimerAnimator: ValueAnimator? = null
 
-    var timerObserver:Observer<Long> = Observer<Long> { newTime ->
+    var timerObserver:Observer<Long> = Observer { newTime ->
         start(newTime)
     }
 

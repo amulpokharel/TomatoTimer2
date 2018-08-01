@@ -6,11 +6,11 @@ import androidx.lifecycle.ViewModel
 import java.util.concurrent.TimeUnit
 
 class MainViewModel : ViewModel() {
-    private var SHORT_BREAK_LENGTH = 30000L
-    private var LONG_BREAK_LENGTH = 30000L
-    private var POMODORO_LENGTH = 30000L
+    private var SHORT_BREAK_LENGTH = 300000L
+    private var LONG_BREAK_LENGTH = 1500000L
+    private var POMODORO_LENGTH = 1500000L
     private var INTERVALS = 4
-    private var currentInterval = 0
+    private var currentInterval = 1
 
     var currentTimer =  MutableLiveData<String>()
     var currentTimerType = MutableLiveData<String>()
@@ -30,7 +30,7 @@ class MainViewModel : ViewModel() {
 
 
     fun startPomodoro(){
-        currentInterval = 0
+        currentInterval = 1
         if(!timerRunning) {
             timerRunning = true
             timerInMs.postValue(POMODORO_LENGTH)
@@ -67,7 +67,7 @@ class MainViewModel : ViewModel() {
                         timerInMs.postValue(LONG_BREAK_LENGTH)
                         currentTimerType.postValue("Long Break")
                         startTimer(LONG_BREAK_LENGTH, "Long Break")
-                        currentInterval = 0
+                        currentInterval = 1
                     }
                 }
                 else {
