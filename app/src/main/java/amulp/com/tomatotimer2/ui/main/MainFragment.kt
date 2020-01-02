@@ -35,7 +35,7 @@ class MainFragment : Fragment() {
         viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         binding = DataBindingUtil.inflate(inflater, R.layout.main_fragment, container, false)
-        binding.setLifecycleOwner(this)
+        binding.lifecycleOwner = this
         binding.viewModelData = viewModel
         return binding.root
     }
