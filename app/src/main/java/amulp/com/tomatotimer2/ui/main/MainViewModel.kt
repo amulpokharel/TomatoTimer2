@@ -1,4 +1,4 @@
-package amulp.com.tomatotimer.ui.main
+package amulp.com.tomatotimer2.ui.main
 
 import android.os.CountDownTimer
 import androidx.lifecycle.MutableLiveData

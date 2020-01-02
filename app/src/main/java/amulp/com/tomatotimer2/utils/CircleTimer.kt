@@ -1,6 +1,6 @@
-package amulp.com.tomatotimer.utils
+package amulp.com.tomatotimer2.utils
 
-import amulp.com.tomatotimer.R
+import amulp.com.tomatotimer2.R
 import android.animation.ValueAnimator
 import android.content.Context
 import android.graphics.*

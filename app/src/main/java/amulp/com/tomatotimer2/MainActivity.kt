@@ -1,6 +1,6 @@
-package amulp.com.tomatotimer
+package amulp.com.tomatotimer2
 
-import amulp.com.tomatotimer.ui.main.MainFragment
+import amulp.com.tomatotimer2.ui.main.MainFragment
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 
