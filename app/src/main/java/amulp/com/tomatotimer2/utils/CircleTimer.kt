@@ -39,10 +39,8 @@ class CircleTimer: View {
 
         if (attrs != null) {
             val ta = context.obtainStyledAttributes(attrs, R.styleable.CircleTimer)
-            if (ta != null) {
-                circleColor = ta.getColor(R.styleable.CircleTimer_circleColor, circleColor)
-                ta.recycle()
-            }
+            circleColor = ta.getColor(R.styleable.CircleTimer_circleColor, circleColor)
+            ta.recycle()
         }
 
         mCirclePaint = Paint()
